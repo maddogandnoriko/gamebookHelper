@@ -1,0 +1,16 @@
+{
+  "name": "Gamebook Helper",
+  "short_name": "GmBkHlp",
+  "theme_color": "green",
+  "background_color": "blue",
+  "display": "standalone",
+  "start_url": "index.html",
+  "description": "Tool to hp you when playing gamebooks, like Fighting Fantasy",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "images/appIcon.jpeg",
+      "sizes": "any"
+    }
+  ]
+}

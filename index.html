@@ -1,0 +1,265 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name= "viewport" content="width=device-width, user-scalable=no" />
+  <title>Simple Dice Roller</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather|Uncial+Antiqua' rel='stylesheet' type='text/css'>
+  <link rel= "manifest" href= "manifest.json" />
+</head>
+<body>
+  <page size="A4">
+    <main role="main">
+      <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+          <label class="m-menu__toggle" for="menu">
+            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </label>
+          <span id="pageHeading">
+            Solo RPG Tools
+          </span>
+          <label class="m-menu__overlay" for="menu"></label>
+          <div class="m-menu">
+            <div class="m-menu__header">
+              <label class="m-menu__toggle" for="menu">
+                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </label>
+              <span>MENU</span>
+            </div>
+            <ul>
+              <li><label id="reset">Reset</label></li>
+              <li>
+                <label class="a-label__chevron" for="item-2">Item 2</label>
+                <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+                <div class="m-menu">
+                  <div class="m-menu__header">
+                    <label class="m-menu__toggle" for="item-2">
+                      <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                        <path d="M19 12H6M12 5l-7 7 7 7"/>
+                      </svg>
+                  </label>
+                    <span>Item 2</span>
+                  </div>
+                  <ul>
+                    <li><label>Item 2.1</label></li>
+                    <li><label>Item 2.2</label></li>
+                    <li>
+                      <label class="a-label__chevron" for="item-2-3">Item 2.3</label>
+                      <input type="checkbox" id="item-2-3" name="item-2" class="m-menu__checkbox">
+                      <div class="m-menu">
+                        <div class="m-menu__header">
+                          <label class="m-menu__toggle" for="item-2-3">
+                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                              <path d="M19 12H6M12 5l-7 7 7 7"/>
+                            </svg>
+                          </label>
+                          <span>Item 2.3 </span>
+                        </div>
+                        <ul>
+                          <li><label>Item 2.3.1</label></li>
+                          <li><label>Item 2.3.2</label></li>
+                          <li><label>Item 2.3.3</label></li>
+                          <li><label>Item 2.3.4</label></li>
+                          <li><label>Item 2.3.5</label></li>
+                        </ul>
+                      <!--</div>-->
+                      </div>
+                    </li>
+                    <li><label>Item 2.4</label></li>
+                    <li><label>Item 2.5</label></li>
+                    <li><label>Item 2.6</label></li>
+                    <li><label>Item 2.7</label></li>
+                    <li><label>Item 2.8</label></li>
+                    <li><label>Item 2.9</label></li>
+                  <!--</ul>-->
+                  </ul>
+                </div>
+              </li>
+              <li><label>Item 3</label></li>
+              <li><label>Item 4</label></li>
+              <li><label>Item 5</label></li>
+              <li><label>Item 6</label></li>
+            </ul>  
+          </div>
+        </nav>
+        
+        
+        
+      </div>
+      <select name="gamebookTitle" id="gamebookTitle">
+        <option disabled selected>Select your gamebook</option>
+        <option value="0">Deathtrap Dungeon</option> 
+        <option value="1">City of Thieves</option> 
+      </select>
+      <p>Last entry played: <input id ="lastEntry" style="width:6ch;"/></p>
+      <section>
+        <div id="characterSheet" class="sectionheading">Stats
+          <div class="tooltip">
+            <span class="tooltiptext">
+              The first bold number for stats is you Initial value, which never change unless specifically stated. The second non-bold number is that stats's current value.
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="profile">
+        <div class="leftCol">
+          <p>Skill</p> <input id ="initialSkill"/>/<input id="currentSkill"/><br>
+          <p>Stamina</p> <input id ="initialStamina"/>/<input id="currentStamina"/><br>
+          <p>Luck</p> <input id ="initialLuck"/>/<input id="currentLuck"/>
+        </div>
+        <div class="rightCol">
+          <p>Provisions</p> <input id="provisions"/><br>
+          <p>Gold</p> <input id="gold"/><br>
+          <!--
+          <p>Jewels</p> <input/><br>
+          <p>Potions</p> <input/><br>-->
+        </div>
+      </section>
+      <section class="profile2" style="margin-top:20px;">
+        <div class="leftCol">
+          
+<!--
+<div class="formfield">
+<label for="potions" style="margin-right: 20px;">Potions</label>
+<textarea id="potions" class="potionsText"></textarea>
+</div>-->
+          
+<label>Potions<textarea id="potions"></textarea></label>
+
+          
+          
+          <!--
+          <p>Potions</p> <textarea class="potionsText" style="height:4ch"></textarea><br>
+          <p>Stamina</p> <input id ="initialStamina"/>/<input id="currentStamina"/><br>
+          <p>Luck</p> <input id ="initialLuck"/>/<input id="currentLuck"/>
+        -->
+        </div>
+        <div class="rightCol">
+<!-- <div class="formfield">
+<label for="jewels" style="margin-right:20px;">Jewels</label>
+<textarea id="jewels" class="potionsText"></textarea>
+</div>
+-->
+<label>Jewels<textarea id="jewels"></textarea></label>
+        </div>
+      </section>
+      <section class="gear">
+          <h2>Gear</h2>
+          <div class="leftCol gear">
+              <input class="gearItem" id="gear0" />
+              <input class="gearItem" id="gear1" />
+              <input class="gearItem" id="gear2" />
+              <input class="gearItem" id="gear3" />
+              <input class="gearItem" id="gear4" />
+              <input class="gearItem" id="gear5" />
+              <input class="gearItem" id="gear6" />
+              <input class="gearItem" id="gear7" />
+          </div>
+          <div class="rightCol gear">
+              <input class="gearItem" id="gear8" />
+              <input class="gearItem" id="gear9" />
+              <input class="gearItem" id="gear10" />
+              <input class="gearItem" id="gear11" />
+              <input class="gearItem" id="gear12" />
+              <input class="gearItem" id="gear13" />
+              <input class="gearItem" id="gear14" />
+              <input class="gearItem" id="gear15" />
+            </div>
+          </div>
+    </section>
+    
+  <div id="dieResult">
+    <img id="placeholder0" class="placeholder"/>
+    <img id="placeholder1" class="placeholder"/>
+    <div>
+      <button id="rollButton">Roll Dice</button>
+    </div>
+  </div>
+  
+  <div id="hintsContainer"></div>
+  <div id="encounterBoxes">
+    <div id="encounterBox0" data-number="0" class="cardLeft encounterBox">
+      <img class="encounterPic" src="images/ice-golem.png" alt="Avatar">
+      <div class="containerB">
+        <h4 class="monsterName">Monster Name</h4>
+        <p>Entry#: <input class="encounterEntry" /></p>
+        <p>Skill: <input class="encounterSkill" /></p>
+        <p>Stamina: <input class="encounterStamina" /></p>
+        <textarea class="encounterText" style="height:10ch"></textarea>
+      </div>
+    </div>
+    <div id="encounterBox1" data-number="1" class="cardRight encounterBox">
+      <img class="encounterPic" src="images/ice-golem.png" alt="Avatar">
+      <div class="containerB">
+        <h4 class="monsterName">Monster Name</h4>
+        <p>Entry#: <input class="encounterEntry" /></p>
+        <p>Skill: <input class="encounterSkill" style="width: 4ch;"/></p>
+        <p>Stamina: <input class="encounterStamina" style="width: 4ch;"/></p>
+        <textarea class="encounterText" style="height:10ch"></textarea>
+      </div>
+    </div>
+    <div id="encounterBox2" data-number="2" class="cardLeft encounterBox">
+      <img class="encounterPic" src="images/ice-golem.png" alt="Avatar">
+      <div class="containerB">
+        <h4 class="monsterName">Monster Name</h4>
+        <p>Entry#: <input class="encounterEntry" /></p>
+        <p>Skill: <input class="encounterSkill" style="width: 4ch;"/></p>
+        <p>Stamina: <input class="encounterStamina" style="width: 4ch;"/></p>
+        <textarea class="encounterText" style="height:10ch"></textarea>
+      </div>
+    </div>
+    <div id="encounterBox3" data-number="3" class="cardRight encounterBox">
+      <img class="encounterPic" src="images/ice-golem.png" alt="Avatar">
+      <div class="containerB">
+        <h4 class="monsterName">Monster Name</h4>
+        <p>Entry#: <input class="encounterEntry" /></p>
+        <p>Skill: <input class="encounterSkill" style="width: 4ch;"/></p>
+        <p>Stamina: <input class="encounterStamina" style="width: 4ch;"/></p>
+        <textarea class="encounterText" style="height:10ch"></textarea>
+      </div>
+    </div>
+  </div> <!-- end encounterBoxes -->
+  <div id="addEncounterBoxes">+</div>
+  <div id="clearLocalStorage">Clear Local Storage</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+</page>
+<!--  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('./sw.js')
+    }
+  </script> -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
