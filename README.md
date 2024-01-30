@@ -1,2 +1,2 @@
 # gamebookHelper
-Helps play books l8ke Fighting Fantasy or Lone Wolf series.
+Helps play books like Fighting Fantasy or Lone Wolf series.
